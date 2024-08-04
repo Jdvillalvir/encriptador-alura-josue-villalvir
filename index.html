@@ -4,8 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Challenge Encriptador</title>
-</head>
+    <link rel="stylesheet" href="style.css">
+    </head>
 <body>
-    
+    <div class="container">
+        <div class="encriptar">
+            <textarea 
+            name="texto" 
+            class="texto" 
+            id="texto" 
+            cols="30" 
+            rows="10" 
+            placeholder="Ingresa el texto aqui.">
+        </textarea>
+        </div>
+        <div class="terminos">
+            <p>Solo letras minusculas y sin acentos</p>
+        </div>
+        <div class="botones">
+            <button class="btn-encriptar" type="button" onclick="encriptar()">
+                Encriptar
+            </button>
+            <input 
+            type="button" 
+            class="btn-desencriptar" 
+            value="Desencriptar" 
+            onclick="desencriptar()"
+            />
+        </div>
+    </div>
 </body>
+<script src="code.js"></script>
 </html>
