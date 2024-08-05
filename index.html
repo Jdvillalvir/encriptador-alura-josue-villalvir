@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Challenge Encriptador</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/style_der.css">
     </head>
 <body>
     <div class="container">
@@ -15,24 +16,29 @@
             id="texto" 
             cols="30" 
             rows="10" 
-            placeholder="Ingresa el texto aqui.">
-        </textarea>
-        </div>
-        <div class="terminos">
+            placeholder="Ingresa el texto aqui"
+            ></textarea>
+            <div class="terminos">
             <p>Solo letras minusculas y sin acentos</p>
         </div>
         <div class="botones">
             <button class="btn-encriptar" type="button" onclick="encriptar()">
                 Encriptar
             </button>
-            <input 
-            type="button" 
-            class="btn-desencriptar" 
-            value="Desencriptar" 
-            onclick="desencriptar()"
-            />
+            <button class="btn-desencriptar" type="button" onclick="desencriptar()">
+                Desncriptar
+            </button>
         </div>
     </div>
+    <div class="encriptado">
+        <img src="/assets/lupa y diamante.png" alt="lupa y diamante" id="img-lupa">
+        <div class="mensaje-encriptado" id="mensaje-encriptado">
+            <h2 id="titulo-mensaje">Ningun Fue Mensaje Econtrado.</h2>
+            <p id="parrafo">Ingresa el texto que deseas encriptado o desencriptar</p>
+            <!--<textarea name="mensaje" id="mensaje" cols="30" rows="10" class="mensaje"></textarea> -->
+        </div>
+    </div>
+</div>
 </body>
 <script src="code.js"></script>
 </html>
